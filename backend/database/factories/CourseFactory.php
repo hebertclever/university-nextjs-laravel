@@ -17,7 +17,8 @@ class CourseFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'course_name' => $this->faker->words(3, true),   // Placeholder course name
+            'description' => $this->faker->sentence(),       // Placeholder course description
         ];
     }
 }

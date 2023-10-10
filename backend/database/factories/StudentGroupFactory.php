@@ -17,7 +17,8 @@ class StudentGroupFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'group_name' => $this->faker->words(3, true),    // Placeholder group name
+            'description' => $this->faker->sentence(),       // Placeholder group description
         ];
     }
 }

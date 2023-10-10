@@ -17,7 +17,8 @@ class CourseCategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'category_name' => $this->faker->word(),         // Placeholder category name
+            'description' => $this->faker->sentence(),       // Placeholder category description
         ];
     }
 }

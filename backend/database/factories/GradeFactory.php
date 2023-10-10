@@ -17,7 +17,9 @@ class GradeFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'student_id' => $this->faker->numberBetween(1, 1000),  // Placeholder student ID
+            'course_id' => $this->faker->numberBetween(1, 1000),   // Placeholder course ID
+            'grade_value' => $this->faker->randomFloat(2, 0, 100), // Placeholder grade value
         ];
     }
 }

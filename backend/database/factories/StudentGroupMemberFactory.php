@@ -17,7 +17,9 @@ class StudentGroupMemberFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'student_id' => $this->faker->numberBetween(1, 1000), // Placeholder student ID
+            'group_id' => $this->faker->numberBetween(1, 1000),   // Placeholder group ID
+            'role' => $this->faker->randomElement(['leader', 'member']) // Role in the group
         ];
     }
 }

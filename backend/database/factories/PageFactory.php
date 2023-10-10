@@ -17,7 +17,9 @@ class PageFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => $this->faker->sentence(),              // Placeholder page title
+            'content' => $this->faker->text(),                // Placeholder page content
+            'slug' => $this->faker->slug(),                   // Placeholder slug for URL
         ];
     }
 }

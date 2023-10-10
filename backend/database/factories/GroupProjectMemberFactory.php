@@ -17,7 +17,9 @@ class GroupProjectMemberFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'member_id' => $this->faker->numberBetween(1, 1000),  // Placeholder member ID
+            'project_id' => $this->faker->numberBetween(1, 1000), // Placeholder project ID
+            'role' => $this->faker->randomElement(['leader', 'member']), // Role in the project
         ];
     }
 }

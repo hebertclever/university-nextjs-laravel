@@ -12,6 +12,6 @@ class ClassSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\mode
+        \App\Models\ClassGroup::factory(10)->create();
     }
 }

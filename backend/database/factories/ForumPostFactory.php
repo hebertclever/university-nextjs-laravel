@@ -17,7 +17,9 @@ class ForumPostFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'content' => $this->faker->paragraph(),            // Placeholder post content
+            'user_id' => $this->faker->numberBetween(1, 1000), // Placeholder user ID
+            'forum_id' => $this->faker->numberBetween(1, 1000), // Placeholder forum ID
         ];
     }
 }

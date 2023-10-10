@@ -12,6 +12,6 @@ class ClassEnrollmentSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\ClassEnrollment::factory(10)->create();
     }
 }
